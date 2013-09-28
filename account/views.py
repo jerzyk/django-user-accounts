@@ -494,6 +494,7 @@ class ChangePasswordView(FormView):
 
 
 class PasswordResetView(FormView):
+    User = get_user_model()
 
     template_name = "account/password_reset.html"
     template_name_sent = "account/password_reset_sent.html"
